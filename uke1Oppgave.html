@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Her er jeg</title>
+</head>
+<body>
+    <div id="hovedTekst">
+        Trykk på knappene nedenfor for å lære mer om meg
+    </div> <br>
+
+    <img src="itsme.jpg"> <br>
+    
+    <button onclick="firstButton()">Musikk</button>
+    <script> function firstButton(){
+        document.getElementById('hovedTekst').innerHTML=
+        'Jeg foretrekker musikk som har nok interessante element til å overraske meg selv etter at jeg har hørt på dem flere ganger allerede. To band jeg liker veldig av denne grunnen er Radiohead og King Gizzard and the Lizard Wizard.'
+        document.getElementById('hovedTekst').style="background-color: teal"
+     }</script>
+
+     <button onclick="secondButton()">Spill</button>
+     <script>
+        function secondButton(){
+            document.getElementById('hovedTekst').innerHTML=
+            "Har utviklet en interesse for mange forskjellige spill-opplevelser, avanserte brettspill som Root, Spirit Island og Twilight Imperium, tabletop rollespill som Pathfinder Second edition og Lancer og en drøss med digitale videospill så lenge de presenterer kule ideer"
+            document.getElementById('hovedTekst').style="background-color: orange"
+        }
+     </script>
+
+     <button onclick="thirdButton()">Filosofi</button>
+     <script>
+        function thirdButton(){
+            document.getElementById('hovedTekst').innerHTML=
+            "Jeg er ikke så meget kunnskapsrik i dette feltet men jeg har en stor interresse for eksistensialisme, normativ etikk og politisk teori. Er ikke nødvendigvis uinteressert i de andre filosofi-grenene men de tre er det jeg liker best"
+            document.getElementById('hovedTekst').style="background-color: violet"
+        }
+     </script>
+
+</body>
+</html>
